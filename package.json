@@ -1,0 +1,15 @@
+{
+  "name": "nft-owner",
+  "version": "1.0.0",
+  "description": "Gets nft owners",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fetchOwners": "node scripts/fetch-owners.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moralis": "^1.3.1"
+  }
+}
