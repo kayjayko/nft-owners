@@ -1,4 +1,5 @@
-const Moralis = require('moralis/node');
+const Moralis = require('moralis/node')
+const fs = require('fs')
 
 // Moralis server
 Moralis.start({
@@ -29,8 +30,8 @@ async function main() {
     owners[r.owner_of]++
   })
 
-  console.log(owners)
-  
+  // Write to file
+  fs.writeFileSync('./out/owners.json', JSON.stringify(owners))
 }
 
 main()
